@@ -1,0 +1,87 @@
+
+{% extends 'base.html' %}
+{% block title %}
+About -
+  
+{% endblock title %}
+{% block body %}
+
+<!-- <h1>About project </h1> -->
+ <head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+    body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: 'Segoe UI', sans-serif;
+    color: #1F2937;
+
+}
+
+        h1 {
+            color: #3b3b3bbb;
+        }
+        p {
+            font-size: 16px;
+            color: #0532e5;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body style="background-color: #00bafd;">
+
+    <h1>About This Project</h1>
+    <p>
+        This is my first backend web development project — a <strong>ToDo List</strong> app made using <strong>Flask</strong> (Python web framework).
+    </p>
+
+    <p>
+        The project allows users to:
+        <ul>
+            <li>Add new tasks with a name and hobbies (used as task description).</li>
+            <li>View all tasks on the home page.</li>
+            <li>Edit or update existing tasks.</li>
+            <li>Delete tasks when they are no longer needed.</li>
+        </ul>
+    </p>
+
+    <p>
+        The app uses an <strong>SQLite database</strong> to store the tasks. For managing the database, I used <strong>Flask-SQLAlchemy</strong> ORM.
+    </p>
+
+    <p>
+        The interface is simple and user-friendly. It includes a form for adding new tasks and displays the task list in a table format. 
+        Users can click "Update" to edit a task or "Delete" to remove it.
+    </p>
+
+    <p>
+        Technologies used in this project:
+        <ul>
+            <li><strong>Python</strong> (Flask)</li>
+            <li><strong>HTML</strong> (Frontend templates)</li>
+            <li><strong>CSS</strong> (for styling)</li>
+            <li><strong>SQLite</strong> (Database)</li>
+            <li><strong>Jinja2</strong> (Template rendering in Flask)</li>
+        </ul>
+    </p>
+
+    <p>
+        This project helped me understand the basics of backend development like:
+        <ul>
+            <li>Routing and URL handling in Flask</li>
+            <li>Form submission and validation</li>
+            <li>Database integration using models</li>
+            <li>Flash messages and redirects</li>
+        </ul>
+    </p>
+
+    <p>
+        I plan to improve it further by adding user login/signup, task deadlines, and priority features in the future.
+    </p>
+
+</body>
+  {% endblock body %}
+
+
